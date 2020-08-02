@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="/static/house-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="/static/custom.css">
+
+    <title>WGU - Home Price Estimator</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">
+        <img src="/static/KCRlogo.jpg" width="72" height="50" alt=""> Home Price Estimator
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <form class="form-inline ml-md-auto">
+            <a class="btn btn-sm btn-outline-secondary" href="/main" role="button">Go Back</a>
+          </form>
+        </div>
+      </nav>
+
+      <div class="jumbotron" style="margin-top: 20px">
+        <div class="container" style="padding: 0px 200px 50px 200px">
+          <h3>Application Feedback</h3>
+          <p>
+            Your feedback is much appreciated. We'll use the information presented here to improve the application and provide
+            a better product for you in the future. <span style="font-weight: bold"> Instructions: </span> The feedback survey consists of 5 ratings and 1 comment box.
+            For the ratings, "5" indicates that you strongly agree, "1" indicates that you strongly disagree.
+          </p>
+        </div>
+        <form action="" method="post" class="main-form needs-validation" novalidate>
+          <h5 style="color: green;">{{ message }}</h5>
+          <p style="margin-bottom: -3px">The application is free of errors:</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group1" id="inlineRadio1a" value="1" required>
+            <label class="form-check-label" for="inlineRadio1a">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group1" id="inlineRadio2a" value="2" required>
+            <label class="form-check-label" for="inlineRadio2a">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group1" id="inlineRadio3a" value="3" required>
+            <label class="form-check-label" for="inlineRadio3a">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group1" id="inlineRadio4a" value="4" required>
+            <label class="form-check-label" for="inlineRadio4a">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group1" id="inlineRadio5a" value="5" required>
+            <label class="form-check-label" for="inlineRadio5a">5</label>
+            <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
+          </div>
+          <p style="margin-bottom: -3px; margin-top: 10px">The application is intuitive and easy to use:</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group2" id="inlineRadio1b" value="1" required>
+            <label class="form-check-label" for="inlineRadio1b">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group2" id="inlineRadio2b" value="2" required>
+            <label class="form-check-label" for="inlineRadio2b">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group2" id="inlineRadio3b" value="3" required>
+            <label class="form-check-label" for="inlineRadio3b">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group2" id="inlineRadio4b" value="4" required>
+            <label class="form-check-label" for="inlineRadio4b">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group2" id="inlineRadio5b" value="5" required>
+            <label class="form-check-label" for="inlineRadio5b">5</label>
+            <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
+          </div>
+          <p style="margin-bottom: -3px; margin-top: 10px">The data visualizations help to understand the original dataset:</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group3" id="inlineRadio1c" value="1" required>
+            <label class="form-check-label" for="inlineRadio1c">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group3" id="inlineRadio2c" value="2" required>
+            <label class="form-check-label" for="inlineRadio2c">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group3" id="inlineRadio3c" value="3" required>
+            <label class="form-check-label" for="inlineRadio3c">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group3" id="inlineRadio4c" value="4" required>
+            <label class="form-check-label" for="inlineRadio4c">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group3" id="inlineRadio5c" value="5" required>
+            <label class="form-check-label" for="inlineRadio5c">5</label>
+            <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
+          </div>
+          <p style="margin-bottom: -3px; margin-top: 10px">The machine learning model accurately reflects price:</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group4" id="inlineRadio1d" value="1" required>
+            <label class="form-check-label" for="inlineRadio1d">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group4" id="inlineRadio2d" value="2" required>
+            <label class="form-check-label" for="inlineRadio2d">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group4" id="inlineRadio3d" value="3" required>
+            <label class="form-check-label" for="inlineRadio3d">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group4" id="inlineRadio4d" value="4" required>
+            <label class="form-check-label" for="inlineRadio4d">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group4" id="inlineRadio5d" value="5" required>
+            <label class="form-check-label" for="inlineRadio5d">5</label>
+            <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
+          </div>
+          <p style="margin-bottom: -3px; margin-top: 10px">The application makes me think about selling my home:</p>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group5" id="inlineRadio1e" value="1" required>
+            <label class="form-check-label" for="inlineRadio1e">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group5" id="inlineRadio2e" value="2" required>
+            <label class="form-check-label" for="inlineRadio2e">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group5" id="inlineRadio3e" value="3" required>
+            <label class="form-check-label" for="inlineRadio3e">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group5" id="inlineRadio4e" value="4" required>
+            <label class="form-check-label" for="inlineRadio4e">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="group5" id="inlineRadio5e" value="5" required>
+            <label class="form-check-label" for="inlineRadio5e">5</label>
+            <div class="invalid-feedback" style="margin-left: 1em">Please choose an option.</div>
+          </div>
+          <div class="form-group">
+            <label for="comments" style="margin-bottom: -3px; margin-top: 20px">Please enter any additional comments, questions, or concerns below:</label>
+            <textarea id="comments" name="comments" rows="5" cols="50">
+            </textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Feedback</button>
+        </form>
+      </div>
+      <hr>
+      <footer style="text-align: center; color: white;">
+        <p>&copy; 2020 King County Realtors</p>
+        <br>
+        <p>dlowe47@wgu.edu</p>
+      </footer>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Form Validation Script -->
+    <script type="text/javascript">
+      var form = document.querySelector('.needs-validation');
+      form.addEventListener('submit', function(event){
+        if(form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      })
+    </script>
+  </body>
+</html>

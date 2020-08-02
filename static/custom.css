@@ -1,0 +1,9 @@
+body {
+	background: url(seattleSkyline.jpg);
+	background-size: cover;
+}
+
+.main-form {
+	width: 450px;
+	margin: auto;
+}
